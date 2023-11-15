@@ -55,14 +55,6 @@ mostrarBoton1.addEventListener("click", function () {
     }
   });
 
-//GetElementById
-async function getElementById(){
-  const myHeader = document.getElementById("myHeader")
-  console.log(myHeader.textContent);
-}
- getElementById();
-
-
  function openModal(imagePath) {
   var modal = document.getElementById("myModal");
   var modalImage = document.getElementById("modalImage");
