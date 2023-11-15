@@ -55,6 +55,36 @@ mostrarBoton1.addEventListener("click", function () {
     }
   });
 
+//GetElementById
+async function getElementById(){
+  const myHeader = document.getElementById("myHeader")
+  console.log(myHeader.textContent);
+}
+ getElementById();
+
+
+ function openModal(imagePath) {
+  var modal = document.getElementById("myModal");
+  var modalImage = document.getElementById("modalImage");
+
+  modal.style.display = "block";
+  modalImage.src = imagePath;
+
+  modalImage.style.maxWidth = "80%"; 
+  modalImage.style.maxHeight = "80%";
+
+  modalImage.style.margin = "auto";
+  modalImage.style.display = "block";
+  modalImage.style.marginTop = "50px";
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+
+
 
 
 

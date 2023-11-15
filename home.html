@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="animated-background">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,107 +11,113 @@
     <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head> 
 <body>
-    <header class="header" id="myHeader">
-        <div class="header-left animacion-titulo">
-            <a href="home.html" class="glow-link">
-                <h4 class="titulos">JUAN DAVID RAVE</h4>
-            </a>
-        </div>
-        <div class="header-right animacion-titulo">
-            <a href="projects.html" class="glow-link">
-                <h4 class="titulos">Projects</h4>
-            </a>
-            <a href="aboutme.html" class="glow-link">
-                <h4 class="titulos">About Me</h4>
-            </a>
-        </div>
-    </header>
-    <main>
-        <div class="below-header">
-            <div class="profile-left">
-                <img class="profile-picture" src="Images/FotoPerfil.png" alt="">
+    <div class="background-container">
+        <header class="header" id="myHeader">
+            <div class="header-left animacion-titulo">
+                <a href="home.html" class="glow-link">
+                    <h4 class="titulos">JUAN DAVID RAVE</h4>
+                </a>
             </div>
-            <div class="profile-right">
-                <h1 class="title-profile"><span style="color: rgba(110, 46, 194, 0.877);">Hello!</span> I´m Juan David<br>UX/UI Designer - Illustrator</h1>
-                <div class="hidden-object">
-                    <p>"Welcome! I'm Juan David Rave, a video game developer specialized in user interfaces and illustrations. My passion is to merge aesthetics with functionality, creating captivating and visually stunning experiences."</p>
+            <div class="header-right animacion-titulo">
+                <a href="projects.html" class="glow-link">
+                    <h4 class="titulos">Projects</h4>
+                </a>
+                <a href="aboutme.html" class="glow-link">
+                    <h4 class="titulos">About Me</h4>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="below-header">
+                <div class="profile-left">
+                    <img class="profile-picture" src="Images/FotoPerfil.png" alt="">
                 </div>
-            </div>  
+                <div class="profile-right">
+                    <h1 class="title-profile"><span style="color: rgba(110, 46, 194, 0.877);">Hello!</span> I´m Juan David<br>UX/UI Designer - Illustrator</h1>
+                    <div class="hidden-object">
+                        <p>"Welcome! I'm Juan David Rave, a video game developer specialized in user interfaces and illustrations. My passion is to merge aesthetics with functionality, creating captivating and visually stunning experiences."</p>
+                    </div>
+                </div>  
+            </div>
+            <!-- Primer contenedor -->
+            <div class="contenedor" id="contenedor1">
+                <div class="izquierda">
+                    <img src="Images/FroggoJump/0_Poster.jpg" alt="Imagen 1" onclick="openModal('Images/FroggoJump/0_Poster.jpg')">
+                </div>
+                <div class="derecha">
+                    <h1 class="titulo-proyecto">Froggo Jump!</h1>
+                    <p class="descripcion-proyecto">Froggo Jump! is a casual game that aims to entertain users at any time of the day. Customize your frog and jump through various scenarios to help the frog "Toño" reunite with its friends. Within Froggo Jump!, you can find different mechanics and power-ups, which will make the game much more enjoyable – it even features local multiplayer! This way, you can compete against your friends, and with our leaderboard, you'll compete against everyone around the world.</p>
+                    <h5 class="titulo-bajo">Role</h5>
+                    <p class="descripcion-proyecto">Illustrator - UX/UI Designer - VFX Artist</p>
+                    <h5 class="titulo-bajo">Software</h5>
+                    <p class="descripcion-proyecto">Illustrator - Photoshop - Unity</p>
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.GreenTomato.FroggoJump&hl=en&gl=US" class="btn-custom" target="_blank">PlayStore</a></li>
+                        <li><a href="https://www.youtube.com/embed/ZiqQ_eK0oqE" class="btn-custom" target="_blank">Trailer</a></li>
+                        <li><a href="https://github.com/FroggoJump/froggojump" class="btn-custom" target="_blank">Github</a></li>
+                        <li><button class="mostrarDivOculto btn-custom" id="mostrarBoton1">Mostrar más</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div-oculto" id="divOculto1">
+                <div class="carrusel">
+                    <div class="slide"><img height="500px" src="Images/FroggoJump/1_MainScreen.png" onclick="openModal('Images/FroggoJump/1_MainScreen.png')"></div>
+                    <div class="slide"><img height="500px" src="Images/FroggoJump/2_Selectcharacter.png" onclick="openModal('Images/FroggoJump/2_Selectcharacter.png')"></div>
+                    <div class="slide"><img height="500px" src="Images/FroggoJump/3_ingame.png" onclick="openModal('Images/FroggoJump/3_ingame.png')"></div>
+                    <div class="slide"><img height="500px" src="Images/FroggoJump/4_PauseMenu.png" onclick="openModal('Images/FroggoJump/4_PauseMenu.png')"></div>
+                    <div class="slide"><img height="500px" src="Images/FroggoJump/5_deathcam.png" onclick="openModal('Images/FroggoJump/5_deathcam.png')"></div>
+                    <div class="slide"><img height="500px" src="Images/FroggoJump/6_Options.png" onclick="openModal('Images/FroggoJump/6_Options.png')"></div>
+                    <div class="slide"><img height="500px" src="Images/FroggoJump/7_challenges.png" onclick="openModal('Images/FroggoJump/7_challenges.png')"></div>
+                    <div class="slide"><img height="500px" src="Images/FroggoJump/8_leaderboard.png" onclick="openModal('Images/FroggoJump/8_leaderboard.png')"></div>
+                </div>
+            </div>
+            <!-- Segundo contenedor -->
+            <div class="contenedor" id="contenedor2">
+                <div class="izquierda">
+                    <img src="Images/Talkie Camp/0_Poster.png" alt="Imagen 2" onclick="openModal('Images/Talkie Camp/0_Poster.png')">
+                </div>
+                <div class="derecha">
+                    <h1 class="titulo-proyecto">Talkie Camp</h1>
+                    <p class="descripcion-proyecto">
+                        Talkie Camp is a video game designed to enhance social interaction by immersing players in a collaborative environment. In this game, participants work together to construct, gather, cook, and safeguard their camp. Talkie Camp seeks to cultivate meaningful and lasting social connections by facilitating engagement between individuals, even when they are physically distant.</p>
+                    <h5 class="titulo-bajo">Role</h5>
+                    <p class="descripcion-proyecto">Illustrator - UX/UI Designer - VFX Artist</p>
+                    <h5 class="titulo-bajo">Software</h5>
+                    <p class="descripcion-proyecto">Illustrator - Photoshop - Unity</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/11KZK2yW-JZmrxIhO9uKEszGyk2tBUwLV/view" class="btn-custom" target="_blank">APK</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=hffULUaBp5Y" class="btn-custom" target="_blank">Trailer</a></li>
+                        <li><a href="https://github.com/mindfulentertainment/talkiecamp" class="btn-custom" target="_blank">Github</a></li>
+                        <li><button class="mostrarDivOculto btn-custom" id="mostrarBoton2">Mostrar más</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div-oculto" id="divOculto2">
+                <div class="carrusel">
+                    <div class="slide"><img width="500px" src="Images/Talkie Camp/1_MainScreen.png" onclick="openModal('Images/Talkie Camp/1_MainScreen.png')"></div>
+                    <div class="slide"><img width="500px" src="Images/Talkie Camp/2_MyCamps.png" onclick="openModal('Images/Talkie Camp/2_MyCamps.png')"></div>
+                    <div class="slide"><img width="500px" src="Images/Talkie Camp/3_JoinACamps.png" onclick="openModal('Images/Talkie Camp/3_JoinACamps.png')"></div>
+                    <div class="slide"><img width="500px" src="Images/Talkie Camp/4_SelectARole.png" onclick="openModal('Images/Talkie Camp/4_SelectARole.png')"></div>
+                    <div class="slide"><img width="500px" src="Images/Talkie Camp/5_IngameExplorerCharacter.png" onclick="openModal('Images/Talkie Camp/5_IngameExplorerCharacter.png')"></div>
+                    <div class="slide"><img width="500px" src="Images/Talkie Camp/6_ConstructorIngameUI.png" onclick="openModal('Images/Talkie Camp/6_ConstructorIngameUI.png')"></div>
+                    <div class="slide"><img width="500px" src="Images/Talkie Camp/7_ConstructorMenu.png" onclick="openModal('Images/Talkie Camp/7_ConstructorMenu.png')"></div>
+                    <div class="slide"><img width="500px" src="Images/Talkie Camp/8_Inventory.png" onclick="openModal('Images/Talkie Camp/8_Inventory.png')"></div>
+                </div>
+            </div>
+        </main>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="" alt="Imagen ampliada" id="modalImage">
         </div>
-        <!-- Primer contenedor -->
-        <div class="contenedor" id="contenedor1">
-            <div class="izquierda">
-                <img src="Images/FroggoJump/0_Poster.jpg" alt="Imagen 1">
+        <footer class="footer">
+            <h1 class="h2">Contact me</h1>
+            <div>
+                <a href="https://www.linkedin.com/in/juan-david-rave-ramírez-2291bb264/" target="_blank">LinkedIn</a>
+                <a href="https://www.artstation.com/juandarave" target="_blank">Artstation</a>
+                <a href="mailto:juandaraven@gmail.com">Email</a>
             </div>
-            <div class="derecha">
-                <h1 class="titulo-proyecto">Froggo Jump!</h1>
-                <p class="descripcion-proyecto">Froggo Jump! is a casual game that aims to entertain users at any time of the day. Customize your frog and jump through various scenarios to help the frog "Toño" reunite with its friends. Within Froggo Jump!, you can find different mechanics and power-ups, which will make the game much more enjoyable – it even features local multiplayer! This way, you can compete against your friends, and with our leaderboard, you'll compete against everyone around the world.</p>
-                <h5 class="titulo-bajo">Role</h5>
-                <p class="descripcion-proyecto">Illustrator - UX/UI Designer - VFX Artist</p>
-                <h5 class="titulo-bajo">Software</h5>
-                <p class="descripcion-proyecto">Illustrator - Photoshop - Unity</p>
-                <ul>
-                    <li><a href="https://play.google.com/store/apps/details?id=com.GreenTomato.FroggoJump&hl=en&gl=US" class="btn-custom" target="_blank">PlayStore</a></li>
-                    <li><a href="https://www.youtube.com/embed/ZiqQ_eK0oqE" class="btn-custom" target="_blank">Trailer</a></li>
-                    <li><a href="https://github.com/FroggoJump/froggojump" class="btn-custom" target="_blank">Github</a></li>
-                    <li><button class="mostrarDivOculto btn-custom" id="mostrarBoton1">Mostrar más</button></li>
-                </ul>
-            </div>
-        </div>
-        <div class="div-oculto" id="divOculto1">
-            <div class="carrusel">
-                <div class="slide"><img height="500px" src="Images/FroggoJump/1_MainScreen.png" alt=""></div>
-                <div class="slide"><img height="500px" src="Images/FroggoJump/2_Selectcharacter.png" alt=""></div>
-                <div class="slide"><img height="500px" src="Images/FroggoJump/3_ingame.png" alt=""></div>
-                <div class="slide"><img height="500px" src="Images/FroggoJump/4_PauseMenu.png" alt=""></div>
-                <div class="slide"><img height="500px" src="Images/FroggoJump/5_deathcam.png" alt=""></div>
-                <div class="slide"><img height="500px" src="Images/FroggoJump/6_Options.png" alt=""></div>
-                <div class="slide"><img height="500px" src="Images/FroggoJump/7_challenges.png" alt=""></div>
-                <div class="slide"><img height="500px" src="Images/FroggoJump/8_leaderboard.png" alt=""></div>
-            </div>
-        </div>
-        <!-- Segundo contenedor -->
-        <div class="contenedor" id="contenedor2">
-            <div class="izquierda">
-                <img src="Images/Talkie Camp/0_Poster.png" alt="Imagen 2">
-            </div>
-            <div class="derecha">
-                <h1 class="titulo-proyecto">Talkie Camp</h1>
-                <p class="descripcion-proyecto">
-                    Talkie Camp is a video game designed to enhance social interaction by immersing players in a collaborative environment. In this game, participants work together to construct, gather, cook, and safeguard their camp. Talkie Camp seeks to cultivate meaningful and lasting social connections by facilitating engagement between individuals, even when they are physically distant.</p>
-                <h5 class="titulo-bajo">Role</h5>
-                <p class="descripcion-proyecto">Illustrator - UX/UI Designer - VFX Artist</p>
-                <h5 class="titulo-bajo">Software</h5>
-                <p class="descripcion-proyecto">Illustrator - Photoshop - Unity</p>
-                <ul>
-                    <li><a href="https://drive.google.com/file/d/11KZK2yW-JZmrxIhO9uKEszGyk2tBUwLV/view" class="btn-custom" target="_blank">APK</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=hffULUaBp5Y" class="btn-custom" target="_blank">Trailer</a></li>
-                    <li><a href="https://github.com/mindfulentertainment/talkiecamp" class="btn-custom" target="_blank">Github</a></li>
-                    <li><button class="mostrarDivOculto btn-custom" id="mostrarBoton2">Mostrar más</button></li>
-                </ul>
-            </div>
-        </div>
-        <div class="div-oculto" id="divOculto2">
-            <div class="carrusel">
-                <div class="slide"><img width="500px" src="Images/Talkie Camp/1_MainScreen.png" alt=""></div>
-                <div class="slide"><img width="500px" src="Images/Talkie Camp/2_MyCamps.png" alt=""></div>
-                <div class="slide"><img width="500px" src="Images/Talkie Camp/3_JoinACamps.png" alt=""></div>
-                <div class="slide"><img width="500px" src="Images/Talkie Camp/4_SelectARole.png" alt=""></div>
-                <div class="slide"><img width="500px" src="Images/Talkie Camp/5_IngameExplorerCharacter.png" alt=""></div>
-                <div class="slide"><img width="500px" src="Images/Talkie Camp/6_ConstructorIngameUI.png" alt=""></div>
-                <div class="slide"><img width="500px" src="Images/Talkie Camp/7_ConstructorMenu.png" alt=""></div>
-                <div class="slide"><img width="500px" src="Images/Talkie Camp/8_Inventory.png" alt=""></div>
-            </div>
-        </div>
-    </main>
+        </footer>
+    </div>
     <script src="script.js"></script>
-    <footer class="footer">
-        <h1 class="h2">Contact me</h1>
-        <div>
-            <a href="https://www.linkedin.com/in/juan-david-rave-ramírez-2291bb264/" target="_blank">LinkedIn</a>
-            <a href="https://www.artstation.com/juandarave" target="_blank">Artstation</a>
-            <a href="mailto:juandaraven@gmail.com">Email</a>
-        </div>
-    </footer>
 </body>
 </html>
